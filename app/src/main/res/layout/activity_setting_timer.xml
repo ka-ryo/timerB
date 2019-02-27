@@ -32,7 +32,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText" android:maxLength="12"
+                        android:id="@+id/editTitle" android:maxLength="12"
                         android:hint="@string/noSetTitleText"
                 />
             </LinearLayout>
@@ -51,7 +51,7 @@
                         android:layout_height="70dp"
                         android:inputType="number"
                         android:ems="10"
-                        android:id="@+id/editText2" android:layout_weight="1" android:layout_marginLeft="20dp"
+                        android:id="@+id/editMinute" android:layout_weight="1" android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"/>
                 <TextView
                         android:text=":"
@@ -64,7 +64,7 @@
                         android:layout_height="70dp"
                         android:inputType="number"
                         android:ems="10"
-                        android:id="@+id/editText3" android:layout_weight="1" android:layout_marginRight="20dp"
+                        android:id="@+id/editSecond" android:layout_weight="1" android:layout_marginRight="20dp"
                         android:layout_marginLeft="20dp"/>
             </LinearLayout>
             <LinearLayout

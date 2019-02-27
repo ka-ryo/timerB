@@ -1,5 +1,6 @@
 package com.timer.myapplication
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,8 @@ import io.realm.RealmBaseAdapter
 class timerBAdapter(data: OrderedRealmCollection<TimerdbModel>?) : RealmBaseAdapter<TimerdbModel>(data) {
     inner class ViewHolder(cell: View){
         val title = cell.findViewById<TextView>(R.id.text1)
-        val timer = cell.findViewById<TextView>(R.id.text2)
+        val minute = cell.findViewById<TextView>(R.id.text2)
+        val second = cell.findViewById<TextView>(R.id.text3)
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
@@ -33,7 +35,8 @@ class timerBAdapter(data: OrderedRealmCollection<TimerdbModel>?) : RealmBaseAdap
         adapterData?.run {
             val savedata = get(position)
             viewHolder.title.text=savedata.title
-            viewHolder.timer.text=savedata.timer.toString()
+            viewHolder.minute.text=savedata.stringMinute
+            viewHolder.second.text=savedata.stringSecond
         }
         return  view
     }

@@ -8,21 +8,38 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-    >
+            android:paddingBottom="10dp" android:paddingTop="10dp">
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="62dp">
             <TextView
-                    android:layout_width="20dp"
                     android:layout_height="match_parent" android:id="@+id/text1" android:layout_weight="1"
-                    android:gravity="center"/>
-            <TextView
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent" android:id="@+id/text2" android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="24sp"
-                    android:textAllCaps="false" android:textStyle="bold"
-                    android:gravity="center"/>
+                    android:gravity="center" android:layout_width="match_parent" android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" tools:text="カップ麺"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" android:id="@+id/text2" android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="24sp"
+                        android:textAllCaps="false" android:textStyle="bold"
+                        android:gravity="right|center" tools:text="30"/>
+                <TextView
+                        android:text=":"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" android:id="@+id/text3" android:layout_weight="1"
+                        android:gravity="left|center" tools:text="30"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="24sp"
+                        android:textStyle="bold"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
