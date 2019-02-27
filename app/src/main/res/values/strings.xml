@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="title_text"/>
+    <string name="timer_text"/>
+    <string name="addTimerText">タイマーを追加</string>
+    <string name="noSetTitleText">タイマー</string>
+    <string name="title">タイトル</string>
+    <string name="title_Timer">時間を設定</string>
+    <string name="saveButtonText">保存</string>
 </resources>
