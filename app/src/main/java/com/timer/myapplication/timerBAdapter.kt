@@ -38,6 +38,7 @@ class timerBAdapter(data: OrderedRealmCollection<TimerdbModel>?) : RealmBaseAdap
             viewHolder.minute.text=savedata.stringMinute
             viewHolder.second.text=savedata.stringSecond
         }
+
         return  view
     }
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ListView
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import io.realm.kotlin.createObject
@@ -17,15 +18,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
 
         realm= Realm.getDefaultInstance()
 
-
-
         val timers =realm.where<TimerdbModel>().findAll()
         listView.adapter=timerBAdapter(timers)
+
+        //スワイプの実装
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
